@@ -1,10 +1,16 @@
-import React from "react"
-import './app.css'
+import React from "react";
+import './app.css';
+import Sidebar from "./Components/SideBarSection/Sidebar";
+import Body from "./Components/BodySection/Body";
+
 
 
 const App = () => {
     return (
-        <div>App</div>
+        <div className="container">
+        <Sidebar></Sidebar>
+        <Body></Body>
+        </div>
     )
 }
 
