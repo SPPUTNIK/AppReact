@@ -1,0 +1,32 @@
+.app-sidebar{
+    width: 200px;
+    height: 100vh;
+    background-color: #F8F8F8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    box-shadow: 1px .125rem .25rem rgba(0,0,0,.06)!important;
+}
+@media screen and (max-width: 768px) {
+    .app-sidebar{
+        width: 65px;
+    }
+    .app-sidebar .small-text {
+        display: none;
+    }
+}
+
+.sidebar-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.app-logo{
+    text-align: center; 
+    font-size: 1.5rem;
+}

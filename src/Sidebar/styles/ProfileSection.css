@@ -1,0 +1,17 @@
+.profile-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.profile-section img{
+    max-width: 40px;
+    border-radius: 50%;
+}
+
+.profile-section span, .profile-section img{
+    display: block;
+    text-align: center;
+}
