@@ -1,6 +1,6 @@
 import './App.css';
 import AppSidebar from './Sidebar/AppSidebar';
-import AppContent from './AppContent';
+import AppContent from './Content/AppContent';
 
 function App() {
   return (

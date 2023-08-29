@@ -29,11 +29,11 @@
     justify-content: center;
 }
 
-.se{
+.container-dashboard{
     border-radius: 1rem;
     border: 0.1rem solid black;
     height: 13rem;
-    background-color: gray;
+    background-color: #F8F8F8;
     flex-basis: 32%;
     min-width: 200px;
 }
@@ -108,3 +108,14 @@
         margin-left: 65px;
     }
 }
+
+
+/* .chart{
+    display: flex;
+    flex-direction: column;
+}
+
+.chart canvas{
+    width: 100px;
+    height: 100px;
+}  */
