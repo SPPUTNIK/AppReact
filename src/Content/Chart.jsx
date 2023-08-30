@@ -26,6 +26,8 @@ function Chart() {
           "#501AE9",
         ],
         hoverBackgroundColor: ["#00A3FF", "#0CA593", "#501AE9"],
+        borderRadius: 8,
+        
       },
     ],
   };
