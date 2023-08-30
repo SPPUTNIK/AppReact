@@ -1,14 +1,13 @@
 import React from 'react'
 import './AppContent.css'
 
-import DounutChart from './Chart';
+import Chart from './Chart';
 
 import {BiSearchAlt} from 'react-icons/bi';
 import ProfileSection from "../Sidebar/ProfileSection";
 import {IoNotificationsOutline} from 'react-icons/io5';
 
 //image
-import imgRobot from './style/robot 1.svg';
 import imgUser from './style/user.svg';
 
 //stars
@@ -63,7 +62,7 @@ function AppContent() {
 
           <div className="container-dashboard chart">
             <div className="chartDiv">
-              <DounutChart className="donut"/>
+              <Chart className="donut"/>
             </div>
           </div>
 
@@ -107,11 +106,7 @@ function AppContent() {
 
 
           <div className="container-dashboard robot">
-
-            <div className="img-robot">
-              <img src={imgRobot} alt='Robot'/>
-            </div>
-
+            
             <div className="button-click">
               <button>Play With Robot</button>
             </div>
@@ -146,23 +141,19 @@ function AppContent() {
                 <img src={imgUser} alt='userImage'/>
                 <span>1</span>
               </div>
-
-
-
-              {/* <div className="match-one">
-
-              </div>
-
-              <div className="match-one">
-
-              </div> */}
-
             </div>
-
           </div>
 
 
-          <div className="container-dashboard">hello</div>
+          <div className="container-dashboard friend">
+
+            <div className="button-click">
+              <button>Play With Friend</button>
+            </div>
+            
+          </div>
+
+
         </div>
       </div>
                 {/* <TbTopologyStar2 className='topo-logy-star'/>

@@ -1,17 +1,20 @@
 import React from 'react';
+
 import {
     Chart as ChartJS,
     ArcElement,
     Tooltip,
     Legend
 } from 'chart.js';
+
 import { Doughnut } from 'react-chartjs-2';
 ChartJS.register(
     ArcElement,
     Tooltip,
     Legend
 );
-function DounutChart() {
+
+function Chart() {
   const data = {
     labels: ["Total Of Won Matches", "Total Of Lose Matches", "Total Canceled Matches"],
     datasets: [
@@ -39,4 +42,4 @@ function DounutChart() {
   return <Doughnut data={data} options={options} />;
 }
 
-export default DounutChart;
+export default Chart;
