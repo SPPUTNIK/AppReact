@@ -153,6 +153,20 @@ function AppContent() {
             
           </div>
 
+          <div className="watch-stream">
+
+            <h2>Spputnik VS Hjrifi</h2>
+
+            <span>Round 3</span>
+
+            <div className="button-watch">
+              <button>Watch</button>
+            </div>
+
+          </div>
+
+
+          
 
         </div>
       </div>

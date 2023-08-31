@@ -1,6 +1,6 @@
 .app-content{
     margin-left: 200px;
-    /* height: 99999px; */
+    height: 9999px;
     overflow-y: hidden;
 }
 
@@ -264,4 +264,68 @@
     justify-content: end;
     background-image: url('./style/player.jpg');
     background-size: cover;
+}
+
+
+/*More*/
+
+.watch-stream{
+    padding: 0.5rem 1rem 1rem;
+    height: 15rem;
+    display: flex;
+    background-image: url('./style/watchStream.svg');
+    flex-basis: 45%;
+    border-radius: 1rem;
+    min-width: 280px;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.watch-stream h2{
+    position: relative;
+    top: 4rem;
+    right: 6rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-family: Krona One;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 150%;
+}
+
+.watch-stream span{
+    width: 228px;
+    height: 26px;
+    color: rgba(255, 255, 255, 0.69);
+    text-align: center;
+    font-family: Krona One;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 150%;
+    position: relative;
+    top: 2rem;
+    right: 6rem;
+}
+
+.button-watch button{
+    position: relative;
+    top: 2rem;
+    right: 6rem;
+    font-weight: 600;
+    font-family: Krona One;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    background: rgba(248, 5, 34, 0.80);
+}
+
+.button-watch button:hover,.button-watch button:active,.button-watch button:focus {
+    background: #00A3FF;
 }
