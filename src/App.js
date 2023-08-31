@@ -1,4 +1,4 @@
-import './App.css';
+import './app.css';
 import AppSidebar from './Sidebar/AppSidebar';
 import AppContent from './Content/AppContent';
 

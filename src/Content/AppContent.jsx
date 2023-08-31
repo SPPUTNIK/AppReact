@@ -9,6 +9,7 @@ import {IoNotificationsOutline} from 'react-icons/io5';
 
 //image
 import imgUser from './style/user.svg';
+import imgStream from './style/rack.jpg';
 
 //stars
 import {TbTopologyStar2} from 'react-icons/tb';
@@ -33,7 +34,7 @@ function AppContent() {
       <header className="app-header">
         <div className="containers app-header__container">
 
-          <h2>Statistics</h2>
+          <h2>Welcome, Abdessamad!</h2>
 
 
           <div className="header-user-notifi">
@@ -57,8 +58,31 @@ function AppContent() {
       </header>
 
       <div className='app-main'>
-        <div className="containers app-main__containers">
 
+       <div className="cont-stream">
+
+        <div className="text-stream">
+
+          <h2>Watch streaming games anywhere anytime</h2>
+
+          <span>Watch your hero compete by watching on CoLoNel</span>
+
+          <button>Watch now</button>
+
+        </div>
+
+        <div className="black-stream">
+          <div className="blackDiv"></div>
+          <div className="stream-watch">
+            <img src={imgStream} alt="" />
+          </div>
+        </div>
+        
+      </div>
+        
+
+
+        <div className="containers app-main__containers">
 
           <div className="container-dashboard chart">
             <div className="chartDiv">
@@ -84,6 +108,14 @@ function AppContent() {
           </div>
 
 
+          <div className="container-dashboard robot">
+            
+            <div className="button-click">
+              <button>Play With Robot</button>
+            </div>
+            
+          </div>
+
 
           <div className="container-dashboard rank-card">
             <h2>Top Ranking</h2>
@@ -104,14 +136,6 @@ function AppContent() {
 
           </div>
 
-
-          <div className="container-dashboard robot">
-            
-            <div className="button-click">
-              <button>Play With Robot</button>
-            </div>
-            
-          </div>
 
 
           <div className="container-dashboard history">
@@ -151,22 +175,7 @@ function AppContent() {
               <button>Play With Friend</button>
             </div>
             
-          </div>
-
-          <div className="watch-stream">
-
-            <h2>Spputnik VS Hjrifi</h2>
-
-            <span>Round 3</span>
-
-            <div className="button-watch">
-              <button>Watch</button>
-            </div>
-
-          </div>
-
-
-          
+          </div>          
 
         </div>
       </div>
