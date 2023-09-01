@@ -21,13 +21,13 @@ function Chart() {
       {
         data: [10, 22, 54],
         backgroundColor: [
-          "#00A3FF",
-          "#0CA593",
-          "#501AE9",
+          "#ffc4008c",
+          "#00a3ff82",
+          "#ff00004f",
         ],
-        hoverBackgroundColor: ["#00A3FF", "#0CA593", "#501AE9"],
+        hoverBackgroundColor: ["#ffc4008c", "#00a3ff82", "#ff00004f"],
         borderRadius: 8,
-        
+        borderWidth: 0.5,
       },
     ],
   };
@@ -37,6 +37,10 @@ function Chart() {
       legend: {
         display: true,
         position: "bottom",
+        labels: {
+          color: "#F8F8F8",
+          padding: 18,
+        },
       },
     },
   };

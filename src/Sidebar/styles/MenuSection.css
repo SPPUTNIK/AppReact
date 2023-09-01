@@ -1,7 +1,7 @@
 .menu-lists{
     display: flex;
     flex-direction: column;
-
+    row-gap: 1rem;
 }
 
 .menu-link{
@@ -11,12 +11,12 @@
     gap: 10px;
 }
 .menu-link.active, .menu-link:hover{
-    background-color: #D9D9D9;
+    background-color: #ba242c;
     border-radius: .8rem;
 }
 
 .small-text{
-    color: #001835;
+    color: #ffffff;
 }
 @media screen and (max-width: 768px) {
     .menu-link{
