@@ -3,10 +3,6 @@ import './AppContent.css'
 
 import Chart from './Chart';
 
-import {BiSearchAlt} from 'react-icons/bi';
-import ProfileSection from "../Sidebar/ProfileSection";
-import {IoNotificationsOutline} from 'react-icons/io5';
-
 //image
 import imgUser from './style/user.svg';
 import imgStream from './style/rack.jpg';
@@ -31,31 +27,6 @@ import {GiPirateFlag} from 'react-icons/gi';
 function AppContent() {
   return (
     <div className='app-content'>
-      <header className="app-header">
-        <div className="containers app-header__container">
-
-          <h2>Welcome, Abdessamad!</h2>
-
-
-          <div className="header-user-notifi">
-            <div className="search-area">
-              <input type='text' placeholder='Search Friend By ID ...'/>
-              <BiSearchAlt className='search-icon'/>
-            </div>
-
-            <div className="notification-area">
-              <IoNotificationsOutline className='notification-icon'/>
-            </div>
-
-            <div className="user-area">
-              <ProfileSection />
-            </div>
-            
-          </div>
-
-        </div>
-
-      </header>
 
       <div className='app-main'>
 

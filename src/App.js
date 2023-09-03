@@ -1,5 +1,6 @@
 import './app.css';
 import AppSidebar from './Sidebar/AppSidebar';
+import AppHeader from './Sidebar/AppHeader';
 import AppContent from './Content/AppContent';
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <div className="App">
       <AppSidebar/>
 
-      <AppContent/>
+      <AppHeader/>
+      {/* <AppContent/> */}
       
     </div>
   );
