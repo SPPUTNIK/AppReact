@@ -1,5 +1,5 @@
 import React from 'react'
-import './AppContent.css'
+import './Dashboard.css'
 
 import Chart from './Chart';
 
@@ -24,7 +24,7 @@ import {GiPirateCaptain} from 'react-icons/gi';
 import {GiCapeArmor} from 'react-icons/gi';
 import {GiPirateFlag} from 'react-icons/gi';
 
-function AppContent() {
+function Dashboard() {
   return (
     <div className='app-content'>
 
@@ -169,4 +169,4 @@ function AppContent() {
   )
 }
 
-export default AppContent
+export default Dashboard

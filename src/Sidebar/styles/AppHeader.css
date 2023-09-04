@@ -6,7 +6,7 @@
     right: 0;
     top: 0;
     display: flex;
-    background: radial-gradient(circle, rgba(147,25,19,1) 0%, rgb(0 0 0 / 0%) 100%);
+    background: radial-gradient(circle, rgb(147 25 19 / 61%) 0%, rgb(0 0 0 / 0%) 100%);
     align-items: center;
     z-index: 2;
 }
@@ -75,6 +75,7 @@
     }
 
     .search-icon{
+        color: #ffffff;
         font-size: 1.3rem;
         position: static;
         transform: none;

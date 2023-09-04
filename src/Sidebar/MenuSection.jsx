@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import './styles/MenuSection.css';
 
@@ -11,54 +12,55 @@ import {BsChatText} from 'react-icons/bs';
 
 
 function MenuSection() {
-  return (
-          <ul className="menu-lists">
+    return (
+
+        <ul className="menu-lists">
             <li className="list-item">
-                <a href="#" className="active menu-link flex">
+                <Link to="/Dashboard" className="menu-link flex">
                     <BiSolidDashboard className="icon"/>
                     <span className="small-text">
                         Dashboard
                     </span>
-                </a>
+                </Link>
             </li>
 
             <li className="list-item">
-                <a href="#" className="menu-link flex">
+                <Link to="/Friends" className="menu-link flex">
                     <LiaUserFriendsSolid className="icon"/>
                     <span className="small-text">
                         Friends
                     </span>
-                </a>
+                </Link>
             </li>
 
             <li className="list-item">
-                <a href="#" className="menu-link flex">
+                <Link to="/Chat" className="menu-link flex">
                     <BsChatText className="icon"/>
                     <span className="small-text">
                         Chat
                     </span>
-                </a>
+                </Link>
             </li>
 
             <li className="list-item">
-                <a href="#" className="menu-link flex">
+                <Link to="/Game" className="menu-link flex">
                     <IoGameControllerOutline className="icon"/>
                     <span className="small-text">
                         Game
                     </span>
-                </a>
+                </Link>
             </li>
 
             <li className="list-item">
-                <a href="#" className="menu-link flex">
+                <Link to="/Setting" className="menu-link flex">
                     <VscSettings className="icon"/>
                     <span className="small-text">
                         Setting
                     </span>
-                </a>
+                </Link>
             </li>
 
-            </ul>
+        </ul>
   )
 }
 
