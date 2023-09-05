@@ -1,12 +1,113 @@
 import React from 'react'
 
 import './Style/Friend.css';
-import imgUser from './Style/userImg.jpeg'
+import imgUser from './Style/userImg.jpeg';
+
+import {AiOutlineUserDelete} from 'react-icons/ai';
+import {AiOutlineUserAdd} from 'react-icons/ai';
+import {IoGameControllerOutline} from 'react-icons/io5';
+import {FiSend} from 'react-icons/fi';
 
 // AiOutlineUserDelete
 // AiOutlineUserAdd
 
 const users = [
+    {
+        img: imgUser,
+        id: "21549",
+        nickName: "Am-klon",
+        firstName: "amin",
+        lastName: "klonop",
+        email: "amin22@student.1337.ma",
+    },
+    {
+        img: imgUser,
+        id: "445566",
+        nickName: "Ana-fdry",
+        firstName: "Anas",
+        lastName: "fdrykil",
+        email: "anas@student.1337.ma",
+    },
+    {
+        img: imgUser,
+        id: "90879",
+        nickName: "Hal-frkil",
+        firstName: "Haland",
+        lastName: "frkily",
+        email: "haland32@student.1337.ma",
+    },
+    {
+        img: imgUser,
+        id: "21549",
+        nickName: "Am-klon",
+        firstName: "amin",
+        lastName: "klonop",
+        email: "amin22@student.1337.ma",
+    },
+    {
+        img: imgUser,
+        id: "445566",
+        nickName: "Ana-fdry",
+        firstName: "Anas",
+        lastName: "fdrykil",
+        email: "anas@student.1337.ma",
+    },
+    {
+        img: imgUser,
+        id: "90879",
+        nickName: "Hal-frkil",
+        firstName: "Haland",
+        lastName: "frkily",
+        email: "haland32@student.1337.ma",
+    },
+    {
+        img: imgUser,
+        id: "21549",
+        nickName: "Am-klon",
+        firstName: "amin",
+        lastName: "klonop",
+        email: "amin22@student.1337.ma",
+    },
+    {
+        img: imgUser,
+        id: "445566",
+        nickName: "Ana-fdry",
+        firstName: "Anas",
+        lastName: "fdrykil",
+        email: "anas@student.1337.ma",
+    },
+    {
+        img: imgUser,
+        id: "90879",
+        nickName: "Hal-frkil",
+        firstName: "Haland",
+        lastName: "frkily",
+        email: "haland32@student.1337.ma",
+    },
+    {
+        img: imgUser,
+        id: "21549",
+        nickName: "Am-klon",
+        firstName: "amin",
+        lastName: "klonop",
+        email: "amin22@student.1337.ma",
+    },
+    {
+        img: imgUser,
+        id: "445566",
+        nickName: "Ana-fdry",
+        firstName: "Anas",
+        lastName: "fdrykil",
+        email: "anas@student.1337.ma",
+    },
+    {
+        img: imgUser,
+        id: "90879",
+        nickName: "Hal-frkil",
+        firstName: "Haland",
+        lastName: "frkily",
+        email: "haland32@student.1337.ma",
+    },
     {
         img: imgUser,
         id: "21549",
@@ -46,7 +147,7 @@ function Friends(){
                     <span className="profil-first">firstName</span>
                     <span className="profil-last">lastName</span>
                     <span className="profil-email">email</span>
-                    <span className="add-friend"></span>
+                    <span className="icons"></span>
                     </div>
                 {users.map((user => {
                     // console.log(user.nickName);
@@ -58,7 +159,9 @@ function Friends(){
                             <span className="profil-first">{user.firstName}</span>
                             <span className="profil-last">{user.lastName}</span>
                             <span className="profil-email">{user.email}</span>
-                            <span className="add-friend">ADD</span>
+                            <span className="icons"><IoGameControllerOutline/></span>
+                            <span className="icons"><FiSend/></span>
+                            <span className="icons"><AiOutlineUserAdd/></span>
                         </div>)
                 }))}
                         
