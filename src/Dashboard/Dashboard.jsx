@@ -1,5 +1,7 @@
-import React from 'react'
-import './Dashboard.css'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import './style/Dashboard.css';
 
 import Chart from './Chart';
 
@@ -24,7 +26,9 @@ import {GiPirateCaptain} from 'react-icons/gi';
 import {GiCapeArmor} from 'react-icons/gi';
 import {GiPirateFlag} from 'react-icons/gi';
 
+
 function Dashboard() {
+  const stre = useNavigate();
   return (
     <div className='app-content'>
 
@@ -38,7 +42,7 @@ function Dashboard() {
 
           <span>Watch your hero compete by watching on CoLoNel</span>
 
-          <button>Watch now</button>
+          <button onClick={() => stre('/Stream')}>Watch now</button>
 
         </div>
 

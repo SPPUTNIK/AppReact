@@ -9,6 +9,8 @@ import Chat from './Chat/Chat';
 import Game from './Game/Game';
 import Setting from './Setting/Setting';
 
+import Stream from './Dashboard/Stream';
+
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
 
         <Routes>
           <Route path='/Dashboard' element={<Dashboard/>}></Route>
+          <Route path='/Stream' element={<Stream/>}></Route>
           <Route path='/Friends' element={<Friends/>}></Route>
           <Route path='/Chat' element={<Chat/>}></Route>
           <Route path='/Game' element={<Game/>}></Route>
