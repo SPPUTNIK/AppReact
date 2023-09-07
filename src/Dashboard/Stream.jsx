@@ -131,8 +131,7 @@ const streams = [
 
 function ListStream(props){
     return (
-        <div className="stream" key={props.key}>
-            <div className="live">
+            <div className="live" key={props.key}>
                 <div className="user">
                     <img src={props.user.img} alt='userImage'/>
                     <span>{props.user.nickName}</span>
@@ -153,10 +152,8 @@ function ListStream(props){
                 <div className="user">
                     <img src={props.user.img} alt='userImage'/>
                     <span>{props.user.nickName}</span>
-                </div>
-                
+                </div>  
               </div>
-        </div>
     );
 }
 
@@ -164,11 +161,15 @@ function Stream(){
     return (
         <div className="show-streams">
             <h1>All Streams</h1>
+            <div className="stream-cards">
             {streams.map(stream => {
                 return (
-                    <ListStream key={stream.id} user={stream}/>
+                    <div className="stream">
+                        <ListStream key={stream.id} user={stream}/>
+                    </div>
                 );
             })}
+            </div>
         </div>
     );
 }
